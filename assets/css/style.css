@@ -1,0 +1,41 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 2rem;
+}
+table{
+    display: flex;
+    justify-content: center;
+}
+tr{
+    display: flex;
+    justify-content: space-between;
+}
+#head{
+    
+    background-color: green;
+    padding: 15px 0;
+
+}
+#line1, #line2, #line3{
+    border-bottom: 3px solid #ddd;
+    padding: 15px 0;
+}
+#line2{
+    background-color: #f3f3f3;
+
+}
+th{
+    margin: 0 4rem;
+}
+td{
+    padding: 15px 12px 15px 0px;
+}
+#crud{
+    margin-left: -40px;
+}
