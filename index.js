@@ -15,16 +15,14 @@ app.use(bodyParser.urlencoded({extended:true}))
 
 app.set('view engine', 'ejs')
 
-app.use('/css', express.static(path.resolve(__dirname, 'assets/css')))
+app.use('/css', express.static(path.resolve(__dirname, 'assets/css/style.css')))
 app.use('/img', express.static(path.resolve(__dirname, 'assets/img')))
 app.use('/js', express.static(path.resolve(__dirname, 'assets/js')))
-app.use('/register.html', express.static(path.resolve(__dirname, 'assets/css/register.css')))
 
 
 
 
 app.get('/', (req, res) => {
-    // res.send('SAIL DEMON APP')
     res.render('index')
 })
 
