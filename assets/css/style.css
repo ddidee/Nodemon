@@ -7,6 +7,7 @@ body{
     position: relative;
     width: 100%;
     height: 100vh;
+
 }
 
 #body{
@@ -15,8 +16,9 @@ body{
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     background: linear-gradient(to right, rgb(95, 18, 30), purple);
+
 }
 #container{
     position: relative;
@@ -58,31 +60,34 @@ input{
     border-bottom: 2px solid black;
     outline: none;
 }
-button{
+.radio{
+    margin: 0;
+}
+#radio{
+    margin-top: -1.5rem;
+}
+.radi{
+    margin: 0;
+}
+
+.button{
     margin: 2rem 30% 0 40%;
     padding: 5px 10px;
     font: large bolder;
     border: none;
     border-radius: 5px;
     background-color: black;
+}
+button a{
+    text-decoration: none;
     color: white;
 }
 
 #table{
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin: 2rem;
-}
-#register{
-    margin: .5rem 0 1rem 0;
-    padding: 5px 10px;
-    font: large bolder;
-    border: none;
-    border-radius: 5px;
-    background-color: green;
-    color: black;
+    width: 100%;
+    height: 100vh;
 }
 
 table{
@@ -96,7 +101,7 @@ tr{
 #head{
     
     background-color: green;
-    padding: 15px 0;
+    padding: 15px 10px;
 
 }
 #line1, #line2, #line3{
@@ -108,11 +113,34 @@ tr{
 
 }
 th{
-    margin: 0 4rem;
+    margin: 0 3rem;
+    padding: 0 20px;
+}
+#name{
+    position: relative;
+    right: 30px;
+    margin-right: 1rem;
 }
 td{
+    position: relative;
+    /* right: 20px; */
     padding: 15px 12px 15px 0px;
 }
 #crud{
-    margin-left: -40px;
+    position: relative;
+    right: 30px;
+  
+}
+
+#button{
+    width: 8%;
+    font: large bolder;
+    border: none;
+    border-radius: 4px;
+    background-color: green;
+    color: white;
+    margin: auto;
+    text-align: center;
+    text-decoration: none;
+    padding: 8px 0;
 }

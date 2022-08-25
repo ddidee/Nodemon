@@ -1,24 +1,29 @@
-<div id="container">
-    <form action="#" method="post">
-        <div>
-            <label for="name">NAME:</label>
-            <input type="text">
-        </div>
-        <div>
-            <label for="team">TEAM:</label>
-            <input type="text">
-        </div>
-        <div>
-            <label for="team">STACK:</label>
-            <input type="text">
-        </div>
-        <div>
-            <label for="team">GENDER:</label>
-            <input type="text">
-        </div>
-        <label for="team">CRUD:</label>
-        <input type="text">
-
-        <button>SUBMIT</button>
-    </form>
+<div id="body">
+    <div id="container">
+        <form action="#" method="post">
+            <div>
+                <label for="name">NAME:</label>
+                <input type="text" placeholder="Enter Name">
+            </div>
+            <div>
+                <label for="team">TEAM:</label>
+                <input type="text" placeholder="Enter Team Name">
+            </div>
+            <div>
+                <label for="team">STACK:</label>
+                <input type="text" placeholder="Enter Stack">
+            </div>
+            <div>
+                <label for="team">GENDER:</label>
+                <div id="radio">
+                    <input type="radio" id="male" value="male" name="gender" >
+                    <label for="male">male</label>
+                    <input type="radio" id="female" value="female" name="gender">
+                    <label for="female">female</label>
+                </div>
+            </div>
+    
+            <button class="button"><a href="/form">SUBMIT</a></button>
+        </form>
+    </div>
 </div>
