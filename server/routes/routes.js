@@ -1,9 +1,11 @@
 const express = require('express')
 const routes = express.Router()
-const controller = require('../controller/controller')
+const axios = require ('axios')
+const {create} = require('../controller/controller')
+
 
 routes.get('/', (req, res) => {
-    res.render('table')
+    res.render('table', {users: 'New Sail'})
 })
 
 routes.get('/form', (req, res) => {
@@ -18,5 +20,7 @@ routes.get('/update', (req, res) => {
     res.render('update')
 })
 
-routes.post('/sail/user', controller.create)
+routes.post('/form', create)
+
+
 module.exports = routes

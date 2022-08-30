@@ -1,17 +1,21 @@
+var express = require('express')
 var userDB = require('../model/model')
+var app = express()
+
+app.use(express.json())
+
+
 
 exports.create = (req, res) => {
     if (!req.body) {
         res.status(400).send({message: 'field cannot be empty'})
+        return;
     }
-    else{
-        const user = new userDB({
-            
+    const user = new userDB({ 
             name: req.body.name,
             team: req.body.team,
             stack: req.body.stack,
             gender: req.body.gender,
-
         })
         user.save(user)
         .then(data => {
@@ -21,7 +25,6 @@ exports.create = (req, res) => {
             res.status(400).send({message: `${error}`})
         })
     }
-}
 
 exports.find = (req, res) => {
     userDB.find()
